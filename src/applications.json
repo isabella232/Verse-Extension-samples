@@ -1,0 +1,35 @@
+[
+  {
+    "name": "Widget Samples",
+    "title": "Widget Samples",
+    "description": "This samples demonstrates using the widget extension point",
+    "extensions": [
+      {
+        "name": "Person Action Sample",
+        "type": "com.ibm.verse.ext.widget",
+        "payload": {
+          "url": "${extensionPath}/samples/actions.html",
+          "features": [
+            "core"
+          ],
+          "actions": [
+            {
+              "id": "com.ibm.verse.ext.person.action",
+              "object": "com.ibm.appreg.object.person",
+              "text": "Person Action",
+              "title": "Person Action",
+              "location": "window",
+              "renderParams": {
+                "width": "900",
+                "height": "500"
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "services": [
+      "Verse"
+    ]
+  }
+]
