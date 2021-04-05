@@ -1,0 +1,20 @@
+[
+  {
+    "name": "ModifyOnSend",
+    "title": "ModifyOnSend",
+    "description": "This sample demonstrates using the ModifyOnSend extension point",
+    "extensions": [
+      {
+        "name": "Modify on Send",
+        "type": "com.ibm.verse.ext.modifyOnSend",
+        "title": "Modify the contents of mail",
+        "payload": {
+          "url": "${extensionPath}/modify-on-send/no-ui/index.html"
+        }
+      }
+    ],
+    "services": [
+      "Verse"
+    ]
+  }
+]

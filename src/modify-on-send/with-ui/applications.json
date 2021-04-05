@@ -1,0 +1,22 @@
+[
+  {
+    "name": "ModifyOnSend",
+    "title": "ModifyOnSend",
+    "description": "This sample demonstrates using the ModifyOnSend extension point",
+    "extensions": [
+      {
+        "name": "Modify on Send",
+        "type": "com.ibm.verse.ext.modifyOnSend",
+        "title": "Modify the contents of mail",
+        "payload": {
+          "location": "embedded",
+          "pattern": "\\[(PROTECTED|PRIVATE|CLASSIFIED|SECRET)\\](\\s+|)",
+          "url": "${extensionPath}/modify-on-send/with-ui/index.html"
+        }
+      }
+    ],
+    "services": [
+      "Verse"
+    ]
+  }
+]
