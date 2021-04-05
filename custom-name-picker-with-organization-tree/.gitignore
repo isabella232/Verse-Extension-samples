@@ -1,0 +1,15 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+
+#node modules
+node_modules
+
+#build folders
+dist
+build
+
+*.DS_Store
+package-lock.json
+

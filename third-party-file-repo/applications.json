@@ -1,0 +1,22 @@
+[{
+  "app_id": "com.ibm.verse.ext.third.party.file",
+  "name": "Third-party file repository integration",
+  "title": "Third-party file repository integration",
+  "description": "Integrate third-party file repository in Verse",
+  "extensions": [{
+    "type": "com.ibm.verse.ext.file",
+    "name": "Third-party file repository integration extension",
+    "payload": {
+      "text": "Third-party File Repository",
+      "url": "https://localhost:3002/login",
+      "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAGpJREFUOE+1k4EKgDAIRC36b/3z6kLJFUpOejAYQ293si3MvFMREdHdCQQqoN73rKpTxlxMC4BLpBrBg95NxV74QQ1De/LFQVSD89YMQBgBmPUsQuoAjbYi/ovgb80ctN9BO0JbYOo73xAdbuoHJPh854UAAAAASUVORK5CYII=",
+      "renderParams": {
+        "width": "450",
+        "height": "230"
+      }
+    }
+  }],
+  "services": [
+    "Verse"
+  ]
+}]

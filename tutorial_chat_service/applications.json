@@ -1,0 +1,34 @@
+[
+  {
+    "name": "Chat Service Integration Sample",
+    "title": "Chat Service Integration Sample",
+    "description": "This is a sample to integrate third-party chat service in Verse",
+    "extensions": [
+      {"type": "com.ibm.appreg.ext.disableSametime"},
+      {"type": "com.ibm.appreg.ext.disableSTMeetings"},
+      {
+        "type": "com.ibm.appreg.ext.templatedLink",
+        "object": "com.ibm.appreg.object.person",
+        "payload": {
+          "text": "Jabber Chat",
+          "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCAxMiAxMiI+PHBhdGggY2xhc3M9ImJhY2tncm91bmQiIGQ9Ik05LjQsMS40QzguNSwwLjUsNy4zLDAsNiwwUzMuNCwwLjUsMi41LDEuNEMxLjYsMi4zLDEuMSwzLjYsMS4xLDQuOXMwLjUsMi40LDEuNCwzLjMmIzEwOyAgICBzMi4xLDEuNCwzLjUsMS40VjEybDMuNC0zLjZjMC45LTAuOSwxLjQtMi4xLDEuNC0zLjRTMTAuMywyLjMsOS40LDEuNHoiLz4KICAKICAKICAKICA8L3N2Zz4=",
+          "href": "xmpp://${emails}",
+          "locator": "chat"
+        }
+      },
+      {
+        "type": "com.ibm.appreg.ext.templatedLink",
+        "object": "com.ibm.appreg.object.person",
+        "payload": {
+          "text": "WebEx meeting",
+          "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGNsYXNzPSJtZWV0aW5nLWljb24iIHZlcnNpb249IjEuMSIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCAxNiAxNiI+PHJlY3QgeT0iMSIgd2lkdGg9IjE2IiBoZWlnaHQ9IjMiLz4KPHJlY3QgeD0iMyIgeT0iMTEiIHdpZHRoPSIxMCIgaGVpZ2h0PSIxIi8+CjxyZWN0IHg9IjciIHk9IjEyIiB3aWR0aD0iMiIgaGVpZ2h0PSI0Ii8+CjxyZWN0IHg9IjQiIHk9IjE1IiB3aWR0aD0iOCIgaGVpZ2h0PSIxIi8+CjxyZWN0IHg9IjEiIHk9IjEuMSIgd2lkdGg9IjEuMiIgaGVpZ2h0PSIxMC4zIi8+CjxyZWN0IHg9IjEiIHk9IjEwLjkiIHdpZHRoPSIxNCIgaGVpZ2h0PSIxLjIiLz4KPHJlY3QgeD0iMTMuOCIgeT0iMS4xIiB3aWR0aD0iMS4yIiBoZWlnaHQ9IjEwLjMiLz48L3N2Zz4=",
+          "href": "https://company.webex.com/join/${emails}",
+          "locator": "meeting"
+        }
+      }
+    ],
+    "services": [
+      "Verse"
+    ]
+  }
+]
